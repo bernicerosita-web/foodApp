@@ -1,12 +1,15 @@
 try {
 let name = prompt("Enter name:");
-if (!name){
+if (!name)
+{
     alert("Name not entered.Exiting...");
 }
-else if (Number(name)){
+else if (Number(name))
+{
     alert("Please enter valid username.");
 }
-else {
+else 
+{
     const order = confirm(`Hello ${name}! Do you want to order food?`);
 
     if (!confirm){
@@ -22,13 +25,15 @@ else {
         choice = Number(choice);
 
 
-        if (!menu[choice]){
+        if (!menu[choice])
+        {
             alert("Invalid choice!")
         }   
 
         var quantity = Number(prompt("Enter quantity:"));
 
-        if (isNaN(quantity) || quantity < 1) {
+        if (isNaN(quantity) || quantity < 1) 
+        {
             alert ("Invallid quantity!");
         }
 
